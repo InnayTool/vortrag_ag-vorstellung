@@ -8,13 +8,14 @@
 %\usepackage[german]{babel}
 \usepackage{ngerman}
 \usepackage{xcolor}
-\usepackage{graphicx}
-\usepackage{tikz}
-
+%\usepackage{graphicx}
+%\usepackage{tikz}
+%\usepackage[showframe]{geometry}
 %Für den Header notwendig!
 %\usepackage[percent]{overpic}
-
+\usepackage{enumitem}
 \usepackage{hyperref} % für korrekte Links
+%\renewcommand{\labelitemi}{$\bullet$}
 
 %Einbinden des Themes
 \input{design_latex-template/beamerthemeFOSSAG.sty}
@@ -45,9 +46,19 @@
 	\end{frame}
 
 	\begin{frame}
-		\frametitle{Fest im Programm}
-			wöchentliches Treffen\\
-			tba, OH 12 - 4.037
+		\frametitle{Wöchentliches Treffen}
+		\begin{itemize}[leftmargin = 1cm]
+			\item[\textbf{Zeit}] tba
+			\item[\textbf{Ort}] OH 12 - 4.037
+		\end{itemize}
+		\textbf{Themen}
+		\begin{itemize}
+			\item Design
+			\item CTF Programmierung
+			\item IT-News
+			\item Sicherheitslücken
+			\item Neue Ideen zu FOSS ;)
+		\end{itemize}
 	\end{frame}
 
 	\begin{frame}
@@ -92,11 +103,14 @@
 	
 	\begin{frame}
 		\frametitle{Kontakt}
-		\begin{itemize}
-			\item \texttt{foss-ag.de}
-			\item Matrix: \texttt{\#foss\_ag:fachschaften.org}
-			\item Telegram-Channel: \texttt{@FOSSAG}
-			\item Twitter: \texttt{@FOSSAGTUDO}	
+
+		
+		\begin{itemize}[leftmargin=4cm]
+					%\centering
+			\item[\textbf{Website:}]\texttt{foss-ag.de}
+			\item[\textbf{Matrix:}] \texttt{\#foss\_ag:fachschaften.org}
+			\item[\textbf{Telegram-Channel:}] \texttt{@FOSSAG}
+			\item[\textbf{Twitter:}] \texttt{@FOSSAGTUDO}	
 			
 		\end{itemize}
 	\end{frame}
